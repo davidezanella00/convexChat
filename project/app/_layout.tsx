@@ -14,7 +14,7 @@ export default function RootLayoutNav() {
       <Stack
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#0db1c3'
+            backgroundColor: '#EEA217'
           },
           headerTintColor: '#fff',
         }}>
@@ -45,8 +45,13 @@ export default function RootLayoutNav() {
             )
           }}
         />
+        <Stack.Screen
+          name='(chat)/[chatid]'
+          options={{
+            headerTitle: 'Test'
+          }}
+        />
       </Stack>
-     {/*  <Stack.Screen name='(chat)/[chatid]' options={{ headerTitle: 'Test' }} /> */}
     </ConvexProvider>
   )
 }
